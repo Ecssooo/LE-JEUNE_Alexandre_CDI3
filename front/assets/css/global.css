@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fefefe;
+}
+
+a {
+  color: #fefefe;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #fefefe;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Cinzel Decorative", serif;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../../assets/img/test.jpg");
+}
+
+header {
+  display: flex;
+  background-color: #211913e1;
+  width: 100%;
+  box-shadow: 5px 3px 5px #000000;
+}
+
+#logo {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  margin-left: 40px;
+  filter: invert(0.8);
+}
+#loginsign {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 20px;
+}
+.buttonlog {
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 20px;
+  padding: 10px;
+  background-color: #211913;
+  border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.buttonlog:hover {
+  color: #ffd700;
+}
+
+nav {
+  display: flex;
+  background-color: #382a20e1;
+  color: #fefefe;
+  justify-content: center;
+  padding: 15px;
+  font-size: 120%;
+  box-shadow: 10px 5px 15px #000000;
+}
+
+#navul {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  list-style: none;
+}
+#navul li {
+  transition: 0.3s;
+}
+
+#navul li:hover {
+  color: #ffd700;
+  font-size: 125%;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+.favorite {
+  width: 5%;
+}

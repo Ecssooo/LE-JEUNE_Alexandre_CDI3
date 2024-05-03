@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harry Potter TCG</title>
+    <link rel="stylesheet" href="../../assets/css/global.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="../../src/accueil/index.html">
+        <img id="logo" src="../../assets/img/logo.png" alt="logo" />
+      </a>
+      <div id="loginsign">
+        <a class="buttonlog" href="conenxion">LOGIN</a>
+        <a class="buttonlog" href="conenxion">SIGN UP</a>
+      </div>
+    </header>
+    <nav>
+      <ul id="navul">
+        <a href="../accueil/index.html"> <li>HOME</li></a>
+        <a href="../collection/index.html"> <li>COLLECTION</li></a>
+      </ul>
+    </nav>
+    <main>
+      <div id="filter">
+        <h2>House</h2>
+        <div class="house">
+          <input id="gryffindor" type="checkbox" />
+          <p>Gryffindor</p>
+        </div>
+        <div class="house">
+          <input id="hufflepuff" type="checkbox" />
+          <p>Hufflepuff</p>
+        </div>
+        <div class="house">
+          <input id="ravenclaw" type="checkbox" />
+          <p>Ravenclaw</p>
+        </div>
+        <div class="house">
+          <input id="slytherin" type="checkbox" />
+          <p>Slytherin</p>
+        </div>
+        <div class="house">
+          <input id="other" type="checkbox" />
+          <p>Others</p>
+        </div>
+        <h2 class="buttonlog" id="applyFilter">APPLY</h2>
+      </div>
+      <div id="page_name">
+        <h2>Card List</h2>
+      </div>
+      <div id="characters_list"></div>
+    </main>
+  </body>
+</html>
