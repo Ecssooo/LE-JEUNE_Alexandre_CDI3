@@ -16,6 +16,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use("/", routes);
 
+//Rendu semaine IOT
 app.get("/", (req, res) => {
   res.json({ house: lastHouseVisited });
 });
