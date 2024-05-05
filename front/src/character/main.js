@@ -6,6 +6,7 @@ function fetchCharacter() {
   );
 }
 
+//Rendu semaine IOT
 function fetchHouse(data) {
   return fetch("http://192.168.183.154:3000/", {
     method: "POST",
