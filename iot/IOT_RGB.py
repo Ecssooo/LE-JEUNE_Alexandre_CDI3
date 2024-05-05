@@ -43,12 +43,12 @@ def FilterHouse(req, maisons):
 wlan = network.WLAN(network.STA_IF)
 wlan.active(True)
 
-ssid = 'ECSSO'
-password = 'motdepasse'
+ssid = '####'
+password = '####'
 
 
 wlan.connect(ssid, password)
-url = "http://192.168.183.154:3000"
+url = "####"
 
 
 while not wlan.isconnected():
