@@ -32,17 +32,13 @@ def setColor(color):
         leds[index].duty_u16(i*50)
         index+=1
 
-def FilterHouse(req):
-    if req == "Gryffindor":
-        setColor(maisons["Gryffindor"])
-    elif req == "Slytherin":
-        setColor(maisons["Slytherin"])
-    elif req == "Ravenclaw":
-        setColor(maisons["Ravenclaw"])
-    elif req == "Hufflepuff":
-        setColor(maisons["Hufflepuff"])
-    else:
-        setColor(maisons["Off"])
+def FilterHouse(req, maisons):
+    for key in maisons:
+        if key == req:
+            setColor(req)
+            break
+        else:
+            setColor("Off")
 
 wlan = network.WLAN(network.STA_IF)
 wlan.active(True)
