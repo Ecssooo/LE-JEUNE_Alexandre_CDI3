@@ -3,8 +3,10 @@ function fetchCharacters() {
     response.json()
   );
 }
+
+//Rendu semaine IOT
 function fetchHouse(data) {
-  return fetch("http://192.168.183.154:3000/", {
+  return fetch("####", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
