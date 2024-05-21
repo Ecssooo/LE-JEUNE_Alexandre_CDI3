@@ -1,0 +1,73 @@
+#button_back {
+  position: absolute;
+  top: 220px;
+  left: 20px;
+  font-size: 115%;
+  padding: 10px;
+  background-color: #211913e1;
+  border-radius: 10px;
+  border: 1px solid #fefefe69;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#button_back:hover {
+  color: #ffd700;
+}
+
+#character_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 95px;
+  margin-left: 25%;
+  background-color: #21191342;
+  padding: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  border: 3px solid #000000;
+  border-radius: 10px;
+}
+
+.character_card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
+
+#id_card {
+  position: absolute;
+  top: 340px;
+  left: 480px;
+}
+
+.character_card img {
+  width: 400px;
+}
+
+#ulinfo {
+  margin-top: 30px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  #button_back {
+    top: 260px;
+  }
+  .character_card img {
+    width: 300px;
+  }
+  #character_card {
+    margin-left: 2%;
+    width: 96%;
+  }
+
+  .character_card {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

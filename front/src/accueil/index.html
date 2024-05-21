@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harry Potter TCG</title>
+    <link rel="stylesheet" href="../../assets/css/global.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a href="../../src/accueil/index.html">
+        <img id="logo" src="../../assets/img/logo.png" alt="logo" />
+      </a>
+      <div id="loginsign">
+        <a class="buttonlog" href="../Login/index.html">LOGIN</a>
+      </div>
+    </header>
+    <nav>
+      <ul id="navul">
+        <a href="../accueil/index.html"> <li>HOME</li></a>
+        <a id="collection_button"> <li>COLLECTION</li></a>
+      </ul>
+    </nav>
+    <main>
+      <div id="filter_button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="50"
+          height="50"
+          viewBox="0,0,256,256"
+          style="fill: #000000"
+        >
+          <g
+            fill="#ffffff"
+            fill-rule="nonzero"
+            stroke="none"
+            stroke-width="1"
+            stroke-linecap="butt"
+            stroke-linejoin="miter"
+            stroke-miterlimit="10"
+            stroke-dasharray=""
+            stroke-dashoffset="0"
+            font-family="none"
+            font-weight="none"
+            font-size="none"
+            text-anchor="none"
+            style="mix-blend-mode: normal"
+          >
+            <g transform="scale(5.12,5.12)">
+              <path d="M0,9v2h50v-2zM0,24v2h50v-2zM0,39v2h50v-2z"></path>
+            </g>
+          </g>
+        </svg>
+      </div>
+      <div class="filter visible">
+        <h2>House</h2>
+        <div class="house">
+          <input id="gryffindor" type="checkbox" />
+          <p>Gryffindor</p>
+        </div>
+        <div class="house">
+          <input id="hufflepuff" type="checkbox" />
+          <p>Hufflepuff</p>
+        </div>
+        <div class="house">
+          <input id="ravenclaw" type="checkbox" />
+          <p>Ravenclaw</p>
+        </div>
+        <div class="house">
+          <input id="slytherin" type="checkbox" />
+          <p>Slytherin</p>
+        </div>
+        <div class="house">
+          <input id="other" type="checkbox" />
+          <p>Others</p>
+        </div>
+        <h2 class="buttonlog" id="applyFilter">APPLY</h2>
+      </div>
+      <input type="text" id="search" placeholder="Rechercher..." />
+      <div class="page_name">
+        <h2>Card List</h2>
+      </div>
+      <div id="characters_list"></div>
+    </main>
+  </body>
+</html>

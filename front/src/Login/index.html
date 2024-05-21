@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page d'Authentification</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../../assets/css/global.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <header>
+    <a href="../../src/accueil/index.html">
+      <img id="logo" src="../../assets/img/logo.png" alt="logo" />
+    </a>
+  </header>
+  <body>
+    <div class="login-form">
+      <form method="POST" id="formulaire">
+        <h2>Connexion</h2>
+        <div class="input-group">
+          <label for="username">Nom d'utilisateur</label>
+          <input type="text" id="email" name="username" required />
+        </div>
+        <div class="input-group">
+          <label for="password">Mot de passe</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+        <button type="submit">Se connecter</button>
+      </form>
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+</html>
